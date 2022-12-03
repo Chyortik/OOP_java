@@ -9,6 +9,7 @@ public class Address implements Serializable{
 
     @Override
     public String toString() {
+
         return streetNumber + " " + streetName + ", " + suburb + ", " + postCode;
     }
 
@@ -51,6 +52,7 @@ public class Address implements Serializable{
     }
 
     public String getStreetName() { // Недопустимый номер дома
+
         return streetName;
     }
 
@@ -85,6 +87,7 @@ public class Address implements Serializable{
     }
 
     public String getPostCode() { // вернуть почтовый индекс
+
         return postCode;
     }
 

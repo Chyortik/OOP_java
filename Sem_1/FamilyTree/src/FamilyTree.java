@@ -4,8 +4,7 @@ public class FamilyTree { // Программа для поиска потомк
 
     static int N = 10; // Максимальное количество детей
 
-    static class Node
-    {
+    public static class Node    {
         String val;
         Node[] child = new Node[N];
 

@@ -22,14 +22,17 @@ public class FamilyTree implements Serializable{
      * параметр новый корень
      */
     public void setRoot(FamilyMember newRoot){
+
         this.root = newRoot;
     }
 
     public boolean hasRoot(){
+
         return this.root !=null;
     }
 
     public FamilyMember getRoot(){
+
         return this.root;
     }
 }

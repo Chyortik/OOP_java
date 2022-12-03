@@ -1,4 +1,4 @@
-//package assignment.pkg2;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -10,7 +10,7 @@ public class FamilyMember implements Serializable{
 
     @Override
     public String toString() {
-        //отображает красивое строковое представление person. () означает, что у них есть
+        //Отображает красивое строковое представление person. () означает, что у них есть
         //девичья фамилия и для их идентификации используются гендерные символы
         String s = null;
         if (this.gender == Gender.МУЖСКОЙ){
@@ -53,7 +53,7 @@ public class FamilyMember implements Serializable{
     private Gender gender;
     private Address address;
     private String lifeDescription;
-    // регулярное выражение для соответствия допустимому имени. разрешает любые символы Юникода с некоторыми
+    // Регулярное выражение для соответствия допустимому имени. Разрешает любые символы Юникода с некоторыми
     //особые случаи, такие как King Henry Jr. или L'ourve D'Marche
     private final String nameRegex = "^[\\p{L} .'-]+$";
 
@@ -106,6 +106,7 @@ public class FamilyMember implements Serializable{
     }
 
     public String getLastName() { // вернуть фамилию
+
         return lastName;
     }
 
@@ -122,6 +123,7 @@ public class FamilyMember implements Serializable{
     }
 
     public String getMaidenName() { // вернуть девичью фамилию
+
         return maidenName;
     }
 
@@ -145,22 +147,27 @@ public class FamilyMember implements Serializable{
     }
 
     public Gender getGender() { // вернуть пол
+
         return gender;
     }
 
     public final void setGender(Gender gender) { // параметр пол, который необходимо установить
+
         this.gender = gender;
     }
 
     public Address getAddress() { // вернуть адрес
+
         return address;
     }
 
     public final void setAddress(Address address) { // параметр адрес для установки
+
         this.address = address;
     }
 
     public String getLifeDescription() { // параметр Описание
+
         return lifeDescription;
     }
 
@@ -249,6 +256,7 @@ public class FamilyMember implements Serializable{
     }
 
     public FamilyMember getFather() { // вернуть отца
+
         return father;
     }
 
@@ -277,6 +285,7 @@ public class FamilyMember implements Serializable{
     }
 
     public FamilyMember getSpouse() { // вернуть супругу
+
         return spouse;
     }
 
@@ -303,10 +312,12 @@ public class FamilyMember implements Serializable{
     }
 
     public ArrayList<FamilyMember> getChildren() { // вернуть детей
+
         return children;
     }
 
     public void setChildren(ArrayList<FamilyMember> children) { // параметр дети, который необходимо установить
+
         this.children = children;
     }
 
